@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.Contact-Form {
+  padding: 30px 0px;
+  background-color: black;
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #{&}-main {
+    width: 80%;
+    margin: auto;
+
+    .form-input {
+      margin: auto;
+      width: 100%;
+
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      label {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+
+        color: #ffffff;
+      }
+      input {
+        height: 52px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        background: #8d8d8d;
+        border-radius: 10px;
+        outline: none;
+      }
+    }
+    button {
+      @include button;
+      display: block;
+      margin: 30px auto;
+    }
+  }
+}

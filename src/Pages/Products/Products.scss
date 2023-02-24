@@ -1,0 +1,17 @@
+@import "../../App.scss";
+.Products-Card-section {
+  background-color: black;
+  padding: 40px 0px;
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .Products-main {
+    width: 90%;
+    margin: auto;
+    @include flexprop(space-evenly);
+
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}

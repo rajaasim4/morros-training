@@ -1,0 +1,50 @@
+@import "../../App.scss";
+.ExerciseCard {
+  width: 386px;
+  height: 536px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  .Exercise-Card-info {
+    height: 0px;
+    width: 100%;
+    transition: $transition;
+
+    background: linear-gradient(
+      0.67deg,
+      #09a2f9 0.6%,
+      rgba(9, 162, 249, 0) 98.75%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: #fafafa;
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  @media (width <=540px) {
+    .ExerciseCard {
+      width: 100%;
+    }
+  }
+  @media (hover: hover) {
+    &:hover .Exercise-Card-info {
+      height: 94px;
+    }
+  }
+  @media (hover: none) {
+    .Exercise-Card-info {
+      height: 94px;
+    }
+  }
+}

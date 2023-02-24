@@ -1,0 +1,44 @@
+@import "../../App.scss";
+.ProductsCard {
+  width: 346px;
+  height: 506px;
+  #{&}-img {
+    height: 60%;
+    background-color: darkorchid;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #{&}-description {
+    height: 40%;
+    background-color: #272727;
+    @include flexprop(center);
+    flex-direction: column;
+    button {
+      @include button;
+      background-color: $blue-bg;
+    }
+    span {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 1.92px;
+      color: #fafafa;
+    }
+    h4 {
+      font-size: 48px;
+      line-height: 57px;
+      text-align: center;
+      letter-spacing: 4.2px;
+      color: #09a2f9;
+    }
+  }
+}
+@media (width<=540px) {
+  .ProductsCard {
+    width: 100%;
+  }
+}

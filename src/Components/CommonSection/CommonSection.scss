@@ -1,0 +1,46 @@
+@import "../../App.scss";
+.CommonSection {
+  width: 100%;
+  background-color: $blue-bg;
+  min-height: 91px;
+  display: flex;
+  align-items: center;
+  .CommonSection-main {
+    width: 80%;
+    margin: auto;
+
+    @include flexprop(space-between);
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 57px;
+
+      color: #ffffff;
+    }
+    button {
+      @include button;
+      height: 45px;
+    }
+  }
+}
+@media (width <=1024px) {
+  .CommonSection {
+    .CommonSection-main {
+      h3 {
+        font-size: 35px;
+      }
+    }
+  }
+}
+@media (width<=540px) {
+  .CommonSection {
+    .CommonSection-main {
+      width: 90%;
+      h3 {
+        font-size: 20px;
+        text-align-last: center;
+      }
+    }
+  }
+}

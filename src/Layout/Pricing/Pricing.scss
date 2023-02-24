@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.Pricing {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0px;
+  h3 {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .Pricing-main {
+    width: 90%;
+    margin: auto;
+    @include flexprop(space-evenly);
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../App.scss";
+.PricingCard {
+  @include flexprop(space-around);
+  flex-direction: column;
+  width: 386px;
+  height: 536px;
+  background-color: #272727;
+  color: white;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  h4 {
+    font-size: 38px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 65px;
+    color: $blue-bg;
+    span {
+      font-size: 25px;
+    }
+  }
+  .PricingCard-info {
+    height: 200px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-20%);
+
+    span {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+  button {
+    @include button;
+    background-color: $blue-bg;
+  }
+}
+@media (width <=540px) {
+  .PricingCard {
+    width: 300px;
+  }
+}

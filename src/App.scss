@@ -1,0 +1,54 @@
+
+$blue-bg: #09a2f9;
+$transition: all 0.4s linear;
+
+@mixin flexprop($space) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+}
+
+@mixin button {
+  width: 208px;
+  height: 54px;
+  cursor: pointer;
+  background: #ffe400;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  transition: all 0.4s linear;
+  &:hover {
+    background: #e2cb00;
+  }
+}
+
+.Main-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #ffffff;
+}
+.section-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .Main-heading {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Main-heading {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .section-heading {
+    font-size: 24px;
+  }
+}

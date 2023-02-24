@@ -1,0 +1,19 @@
+@import "../../App.scss";
+.ExerciseSection {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0px;
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .Exercise-main {
+    width: 90%;
+    margin: auto;
+    @include flexprop(space-evenly);
+    row-gap: 30px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    overflow: hidden;
+  }
+}
